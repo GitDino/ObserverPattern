@@ -14,6 +14,8 @@
 		016EB398207E436800AAC25B /* ObserverPatternDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 016EB397207E436800AAC25B /* ObserverPatternDemoTests.m */; };
 		016EB3A3207E436800AAC25B /* ObserverPatternDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 016EB3A2207E436800AAC25B /* ObserverPatternDemoUITests.m */; };
 		016EB3B5207E43BE00AAC25B /* DORootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 016EB3B4207E43BE00AAC25B /* DORootVC.m */; };
+		016EB3B9207E461B00AAC25B /* SubscriptionServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 016EB3B8207E461B00AAC25B /* SubscriptionServiceCenter.m */; };
+		016EB3BE207E4A3C00AAC25B /* DOCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 016EB3BD207E4A3C00AAC25B /* DOCustomer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,11 @@
 		016EB3A4207E436800AAC25B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		016EB3B3207E43BE00AAC25B /* DORootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DORootVC.h; sourceTree = "<group>"; };
 		016EB3B4207E43BE00AAC25B /* DORootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DORootVC.m; sourceTree = "<group>"; };
+		016EB3B7207E461B00AAC25B /* SubscriptionServiceCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscriptionServiceCenter.h; sourceTree = "<group>"; };
+		016EB3B8207E461B00AAC25B /* SubscriptionServiceCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubscriptionServiceCenter.m; sourceTree = "<group>"; };
+		016EB3BB207E46F200AAC25B /* SubscriptionServiceCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscriptionServiceCenterProtocol.h; sourceTree = "<group>"; };
+		016EB3BC207E4A3C00AAC25B /* DOCustomer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOCustomer.h; sourceTree = "<group>"; };
+		016EB3BD207E4A3C00AAC25B /* DOCustomer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOCustomer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +106,8 @@
 		016EB37D207E436600AAC25B /* ObserverPatternDemo */ = {
 			isa = PBXGroup;
 			children = (
+				016EB3BA207E46D700AAC25B /* Protocol */,
+				016EB3B6207E45FC00AAC25B /* Model */,
 				016EB3B2207E439600AAC25B /* Controller */,
 				016EB3B1207E439000AAC25B /* Bases */,
 				016EB3B0207E438900AAC25B /* Resources */,
@@ -151,6 +160,25 @@
 				016EB3B4207E43BE00AAC25B /* DORootVC.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		016EB3B6207E45FC00AAC25B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				016EB3B7207E461B00AAC25B /* SubscriptionServiceCenter.h */,
+				016EB3B8207E461B00AAC25B /* SubscriptionServiceCenter.m */,
+				016EB3BC207E4A3C00AAC25B /* DOCustomer.h */,
+				016EB3BD207E4A3C00AAC25B /* DOCustomer.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		016EB3BA207E46D700AAC25B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				016EB3BB207E46F200AAC25B /* SubscriptionServiceCenterProtocol.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +311,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				016EB3B5207E43BE00AAC25B /* DORootVC.m in Sources */,
+				016EB3B9207E461B00AAC25B /* SubscriptionServiceCenter.m in Sources */,
 				016EB38E207E436800AAC25B /* main.m in Sources */,
 				016EB380207E436600AAC25B /* AppDelegate.m in Sources */,
+				016EB3BE207E4A3C00AAC25B /* DOCustomer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
